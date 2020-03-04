@@ -6,7 +6,7 @@
 #    By: edramire <edramire@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/12/05 14:00:28 by edramire          #+#    #+#              #
-#    Updated: 2020/03/04 02:06:03 by edramire         ###   ########.fr        #
+#    Updated: 2020/03/04 17:05:39 by edramire         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,9 @@ LIBS := -I minilibx
 CC := gcc $(FLAGS) $(LIBS)
 
 SRC := \
-	game_init.c
+	game_draw.c			\
+	game_init.c			\
+	game_loop.c			\
 
 ifeq ($(UNAME), Linux)
 	SRC := $(SRC) strlcpy.c
