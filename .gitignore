@@ -4,7 +4,7 @@
 *.dSYM
 .vscode
 *.out
-cube3d
+game
 *.o
 *.bmp
 *.txt
